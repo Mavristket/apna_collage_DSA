@@ -1,7 +1,7 @@
-class sumsubarray{
+class maxsumarray{
     public static void sub(int numbers[]){
+        int maxsum=Integer.MIN_VALUE;
         for(int i=0;i<numbers.length;i++){
-            int maxsum=Integer.MIN_VALUE;
             for(int j=i;j<numbers.length;j++){
                 int currentsum=0;
                 for(int k=i;k<=j;k++){
@@ -12,9 +12,9 @@ class sumsubarray{
                 }
                 
             }
-            System.out.println("Maximum sum: "+maxsum);
 
         }
+         System.out.println("Maximum sum: "+maxsum);
 
 
     }
