@@ -23,5 +23,6 @@ class binaryseach{
         }else{
             System.out.println("Element found at index: " + result);
         }
+        System.out.print("Exit");
     }
 }
