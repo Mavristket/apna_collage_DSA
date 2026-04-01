@@ -14,5 +14,6 @@ class max_element_array {
         int nums[] = {1,2,3,4,5,6,7,8,9,10};
         int maxm = findmax(nums);
         System.out.println("The largest element in the array is: " + maxm);
+        System.out.print("Exit");
     }
 }
