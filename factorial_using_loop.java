@@ -8,5 +8,6 @@ class apna{
             fact=fact*i;
         }
         System.out.print("factorail"+fact);
+        System.out.print("Exit");
 }
 }
