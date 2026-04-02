@@ -16,6 +16,7 @@ class subarray{
     public static void main(String[] args){
         int numbers[]={2,4,6};
         sub(numbers);
+        System.out.print("Exit");
 
     }
 }
