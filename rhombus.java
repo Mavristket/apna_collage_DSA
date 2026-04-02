@@ -12,5 +12,6 @@ class rhombus{
     }
     public static void main(String[] args){
         pattern(5);
+        System.out.print("Exit");
     }
 }
