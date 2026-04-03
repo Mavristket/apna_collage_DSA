@@ -11,5 +11,6 @@ class pattern4{
             }
             System.out.println();
         }
+        Systm.out.print("Exit");
     }
 }
