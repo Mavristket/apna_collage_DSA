@@ -36,5 +36,7 @@ class prefixSum {
     public static void main(String[] args) {
         int numbers[] = {2, 4, 6};
         sum(numbers);
+        System.out.print("Exit");
+
     }
 }
