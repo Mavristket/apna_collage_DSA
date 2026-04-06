@@ -34,5 +34,6 @@ class rainwatertrapping {
         int height[] = {4, 3, 5, 1, 6, 8};
         int result = trap(height);
         System.out.println("Trapped Water = " + result);
+        System.out.println("Time Complexity: O(n)");
     }
 }
