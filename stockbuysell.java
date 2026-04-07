@@ -17,5 +17,6 @@ class stockbuysell{
         int prices[]={7,6,4,8,1,2,9};
         int result=pre(prices);
         System.out.print(result);
+        System.out.println("Time Complexity: O(n)");
     }
 }
