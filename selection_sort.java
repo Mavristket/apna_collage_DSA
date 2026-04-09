@@ -21,5 +21,6 @@ class selection_sort{
         int arr[]={9,6,1,5,8,7,3};
         sort(arr);
         p(arr);
+        System.out.println("Sorted array: ");
     }
 }
