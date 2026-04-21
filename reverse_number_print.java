@@ -9,5 +9,6 @@ class reverse{
     public static void main(String[] args){
         reverse r=new reverse();
         r.p(5);
+        System.out.println();
     }
 }
