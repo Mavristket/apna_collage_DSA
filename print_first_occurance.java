@@ -8,8 +8,8 @@ class print_first_occurance{
         }
         return check(arr, key, i+1);
     }
-    public static void main(String[] args){
-        int arr[]={1,2,3,4,5};
+    public satic void min(String[] args){
+        int arr[]={1,2,3,4,5,3};
         int key=3;
         int ans=check(arr, key, 0);
         System.out.println(ans);
