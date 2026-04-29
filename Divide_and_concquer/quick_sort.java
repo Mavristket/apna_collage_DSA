@@ -23,6 +23,7 @@ class quick_sort{
             quick_sort(arr,start,pivot-1);
             quick_sort(arr,pivot+1,end);
 
+
         }
     }
     public static void main(String[] args) {
@@ -32,5 +33,6 @@ class quick_sort{
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }
+        System.out.println();
     }
 }
