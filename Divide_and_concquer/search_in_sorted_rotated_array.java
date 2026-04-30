@@ -34,5 +34,6 @@ class search_in_sorted_rotated_array{
         }else{
             System.out.println("Element found at index: "+result);
         }
+        System.out.print("Exit");
     }
 }
