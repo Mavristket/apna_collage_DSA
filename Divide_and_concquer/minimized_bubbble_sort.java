@@ -23,5 +23,6 @@ class minimized_bubbble_sort{
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
+        System.out.print("comlexity of this algorithm is O(n) in best case and O(n^2) in worst case");
     }
 }
