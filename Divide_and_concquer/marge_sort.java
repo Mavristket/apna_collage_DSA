@@ -38,6 +38,7 @@ class marge_sort{
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
+        System.out.println("Time complexity of this algorithm is O(nlogn) and space complexity is O(n) due to temporary array");            
     }
 
 }
