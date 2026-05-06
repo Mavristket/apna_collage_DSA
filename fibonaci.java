@@ -12,5 +12,6 @@ class fibonaci{
         int n=5;
         int ans=fib(n);
         System.out.println(ans);
+        System.out.println("Time complexity of this algorithm is O(2^n) and space complexity is O(n) due to recursive stack space");        
     }
 }

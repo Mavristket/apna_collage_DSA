@@ -23,4 +23,4 @@ class lastoccurance {
         int ans = check(arr, key, 0);
         System.out.println(ans);
     }
-}
+} 
