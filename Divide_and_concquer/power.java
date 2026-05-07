@@ -14,5 +14,6 @@ class power{
         int a=2;
         int n=10;
         System.out.println(a+" raised to the power "+n+" is: "+power(a,n));
+        System.out.println("Complexity of this algorithm is O(log n) because we are dividing the problem into half at each step.");
     }
 }
