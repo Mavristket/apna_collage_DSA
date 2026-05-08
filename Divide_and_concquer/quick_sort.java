@@ -34,5 +34,6 @@ class quick_sort{
             System.out.print(arr[i]+" ");
         }
         System.out.println();
+        System.out.println("Complexity of this algorithm is O(n log n) on average and O(n^2) in the worst case when the pivot selection is poor (e.g., when the input array is already sorted or reverse sorted). However, with good pivot selection strategies (e.g., using the median or random pivot), the worst-case time complexity can be improved to O(n log n).");
     }
 }
