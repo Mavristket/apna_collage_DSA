@@ -8,6 +8,7 @@ class N_queens{
             }
         }
         nQueens(board,0);
+        System.out.println("Complexity is O(n!)");
 
     }
     public static void display(int [][] board){
