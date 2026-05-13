@@ -17,5 +17,6 @@ class backtracking_array{
     public static void main(String[] args) {
         int arr[]=new int[3];
         backtracking(arr,0,1);
+        System.out.print("complexity is O(n)")
     }
 }
