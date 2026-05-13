@@ -15,6 +15,8 @@ class permutations{
         String str="abc";
         check(str,"");
         System.out.println("Complexity is O(n*n!)");
+        System.out.println("Complexity is O(n*n!)");
+        
     }
     
 }
