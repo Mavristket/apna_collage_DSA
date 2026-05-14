@@ -13,5 +13,6 @@ class grid_ways{
         int n=3;
         int m=3;
         System.out.println(gridways(0,0,n,m));
+        System.out.println("Complexity is O(2^(n+m))");
     }
 }
