@@ -101,5 +101,6 @@ class Sudoku {
         } else {
             System.out.println("No Solution Exists");
         }
+        System.out.println("Time Complexity: O(9^(n*n))");
     }
 }
