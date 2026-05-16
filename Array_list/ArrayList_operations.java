@@ -14,5 +14,6 @@ class ArrayList_operations{
         System.out.print(list);
         list.remove(1);
         System.out.print(list);
+        System.out.print("Complexity is O(1),O(1)");
     }
 }
