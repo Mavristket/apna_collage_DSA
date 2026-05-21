@@ -9,5 +9,6 @@ class Size_method{
         list.add(50);
         System.out.print(list);
         System.out.print(list.size());
+        System.out.print("Endl");
     }
 }
