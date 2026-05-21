@@ -17,9 +17,10 @@ class twod_list{
         for(int i=0;i<main.size();i++){
             ArrayList<Integer> curr=main.get(i);
             for(int j=1;j<curr.size();j++){
-                System.out.print(curr.get(j));
+                System.out.print(curr.get(j)+" ");
             }
             System.out.println();
+            System.out.print("End");
         }
     }
 
