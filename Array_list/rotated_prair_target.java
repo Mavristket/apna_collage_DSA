@@ -20,6 +20,7 @@ class rotated_prair_target{
         int rpp=lp;
         int target=12;
         System.out.print(search(list,lpp,rpp,target));
+        System.out.println("O(n)");
 }
 public static boolean search(ArrayList<Integer> list,int lpp,int rpp,int target){
     while(lpp!=rpp){
