@@ -1,10 +1,10 @@
 public class add_pos {
 
-    public class Node {
+    class Node {
         int data;
         Node next;
 
-        public Node(int data) {
+        Node(int data) {
             this.data = data;
             this.next = null;
         }
@@ -17,8 +17,9 @@ public class add_pos {
 
         Node newNode = new Node(value);
 
-        // Insert at beginning
+        // Insert at first position
         if (pos == 1) {
+
             newNode.next = head;
             head = newNode;
 
@@ -33,7 +34,6 @@ public class add_pos {
 
             int i = 1;
 
-            // Move to previous node
             while (i < pos - 1 && temp != null) {
                 temp = temp.next;
                 i++;
@@ -47,7 +47,6 @@ public class add_pos {
             newNode.next = temp.next;
             temp.next = newNode;
 
-            // Update tail
             if (newNode.next == null) {
                 tail = newNode;
             }
@@ -71,7 +70,6 @@ public class add_pos {
         a.add(10, 1);
         a.add(20, 2);
         a.add(30, 3);
-
         a.add(15, 2);
 
         a.display();
