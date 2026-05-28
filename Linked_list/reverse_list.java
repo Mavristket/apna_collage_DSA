@@ -53,5 +53,6 @@ public class reverse_list{
         System.out.println();
         i.reverse();
         i.display();
+        System.out.println("Complexity of reversing a linked list is O(n) where n is the number of nodes in the linked list.");     
     }
 }
