@@ -66,6 +66,6 @@ public class delete_nth_from_last{
         System.out.println();
         i.delete(2);
         i.display();
-        System.out.println("Complexity of deleting the nth node from the end of a linked list is O(n) where n is the number of nodes in the linked list.");
+        System.out.println("Complexity is O(n)");
     }
 }
