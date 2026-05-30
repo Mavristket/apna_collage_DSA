@@ -87,5 +87,7 @@ public class palindrome_list {
         p.display(); 
         System.out.println(); 
         System.out.println(p.ispalindrome()); 
+        System.out.println(p.size);
+        System.out.println("Complexity: O(n)");
     } 
 }
