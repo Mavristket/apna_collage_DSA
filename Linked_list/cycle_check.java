@@ -63,5 +63,6 @@ public class cycle_check{
         list.tail.next = list.head; // Comment this line to test without a cycle
 
         System.out.println("Does the linked list have a cycle? " + hascycle(list.head));
+        System.out.println("Complexity is O(n) and space complexity is O(1)");
     }
 } 
