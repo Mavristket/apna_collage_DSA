@@ -68,5 +68,6 @@ public class remove_cycle{
         list.remove();
         System.out.println("\nAfter removing cycle:");
         list.display();
+        System.out.println("Complexity: O(n) for time and O(1) for space");
     }
 }
