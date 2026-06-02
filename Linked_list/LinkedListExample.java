@@ -33,5 +33,9 @@ public class LinkedListExample {
         for(String lang : list) {
             System.out.println(lang);
         }
+        System.out.println("Complexity of LinkedList operations:");
+        System.out.println("Add: O(1) for addFirst and addLast, O(n) for add at index");
+        System.out.println("Remove: O(n) for remove by value, O(1) for removeFirst and removeLast");
+        System.out.println("Access: O(1) for getFirst and getLast, O(n) for get at index");
     }
 }
