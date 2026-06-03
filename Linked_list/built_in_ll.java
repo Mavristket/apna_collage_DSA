@@ -9,6 +9,10 @@ public class built_in_ll{
         list.removeLast();
         list.removeFirst();
         System.out.println("After removing first and last:"+list);
+        System.out.println("Complexity of LinkedList operations:");
+        System.out.println("Add: O(1) for addFirst and addLast, O(n) for add at index");
+        System.out.println("Remove: O(n) for remove by value, O(1) for removeFirst and removeLast");
+        System.out.println("Access: O(1) for getFirst and getLast, O(n) for get at index");
 
     }
 }
