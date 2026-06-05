@@ -86,5 +86,6 @@ public class zig_zag_linkedlist{
         System.out.print(temp.data + " ");
         temp = temp.next;
     }
+    System.out.println("Complexity of this code is O(n) and space complexity is O(1)");
 }
 }
