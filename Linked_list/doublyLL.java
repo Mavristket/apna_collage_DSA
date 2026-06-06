@@ -59,5 +59,8 @@ public class doublyLL{
         list.remove();
         System.out.println("List after removing last element:");
         list.print();
+        System.out.println("Size of the list: "+list.size);
+        System.out.println("Complexity of add and remove operations: O(1)");
+        
     }
 }
