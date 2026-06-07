@@ -47,6 +47,20 @@ public class doublyLL{
         }
         System.out.println();
     }
+    public void reverse(){
+        Node curr=head;
+        Node prev=null;
+        Node next;
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            curr.prev=next;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+        
+    }
     public static void main(String[] args){
         doublyLL list=new doublyLL();
         list.add(1);
@@ -61,6 +75,8 @@ public class doublyLL{
         list.print();
         System.out.println("Size of the list: "+list.size);
         System.out.println("Complexity of add and remove operations: O(1)");
+        list.reverse();
+        list.print();
         
     }
 }
