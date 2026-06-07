@@ -77,6 +77,7 @@ public class doublyLL{
         System.out.println("Complexity of add and remove operations: O(1)");
         list.reverse();
         list.print();
+        System.out.println("Complexity of the reverse is the O(1)");
         
     }
 }
