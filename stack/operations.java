@@ -33,5 +33,7 @@ public class operations{
             System.out.println(s.peek());
             s.pop();
         }
+        System.out.println("Complexity of push and pop is O(1)");
+        
     }
 }
