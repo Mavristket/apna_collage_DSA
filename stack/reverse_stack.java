@@ -26,5 +26,6 @@ public class reverse_stack{
         while(!s.isEmpty()){
             System.out.println(s.pop());
         }
+        System.out.println("Complexity is O(n^2) because we are using two recursive calls and each call is O(n) in worst case");
     }
 }
