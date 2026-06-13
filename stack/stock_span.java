@@ -26,5 +26,6 @@ public class stock_span{
         for(int i=0;i<span.length;i++){
             System.out.print(span[i]+" ");
         }
+        System.out.println("Complexity is O(n) because we are using stack and each element is pushed and popped at most once");
     }
 }
