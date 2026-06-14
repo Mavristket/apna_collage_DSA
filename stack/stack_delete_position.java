@@ -28,5 +28,6 @@ public class Main {
         }
 
         System.out.println("Stack after deletion: " + stack);
+        System.out.println("Complexity is O(n) because we are using stack and each element is pushed and popped at most once");
     }
 }
