@@ -19,5 +19,6 @@ public class ReverseStack {
         }
 
         System.out.println("Reversed Stack: " + reverseStack);
+        System.out.println("Original Stack after reversal: " + stack);
     }
 }
