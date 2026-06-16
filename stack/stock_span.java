@@ -23,6 +23,7 @@ public class stock_span{
         int stock[]={100,80,60,70,60,75,85};
         int span[]=new int[stock.length];
         stockspan(stock,span);
+        System.out.println("Stock prices: "+Arrays.toString(stock));
         for(int i=0;i<span.length;i++){
             System.out.print(span[i]+" ");
         }
