@@ -34,6 +34,5 @@ public class operations{
             s.pop();
         }
         System.out.println("Complexity of push and pop is O(1)");
-        
     }
 }
