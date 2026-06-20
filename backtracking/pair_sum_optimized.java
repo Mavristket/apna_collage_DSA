@@ -25,5 +25,6 @@ class pair_sum_optimized{
         list.add(60);
         int target=40;
         System.out.print(test(list,target));
+        system.out.println("Complexity is O(n) and space is O(1)");
     }
 }
