@@ -13,5 +13,6 @@ class find_indexes_key{
         int key=5;
         System.out.println("Indexes of key "+key+" are:");
         check(arr,key,0);
+        System.out.println();
     }
 }
