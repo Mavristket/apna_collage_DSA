@@ -8,6 +8,8 @@ class reverse_array{
         list.add(40);
         for(int i=list.size()-1;i>=0;i--){
             System.out.print(list.get(i));
+
         }
+        System.out.println("O(n)");
     }
 }
