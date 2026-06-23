@@ -35,5 +35,6 @@ class Majority_Element{
         System.out.println(majorityElement(nums));
         System.out.println("complexity is O(nlogn)");
         
+        
     }
 }
