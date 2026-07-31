@@ -38,6 +38,22 @@ public class build_tree {
             preorder(root.left);
             preorder(root.right);
         }
+        public static void inorder(Node root){
+            if(root==null){
+                return;
+            }
+            inorder(root.left);
+            System.out.print(root.data+" ");
+            inorder(root.right);
+        }
+        public static void postorder(Node root){
+            if(root==null){
+                return;
+            }
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(root.data+" ");
+        }
     }
 
     public static void main(String[] args) {
@@ -50,5 +66,9 @@ public class build_tree {
         System.out.print("Root node data: " + root.data); // Fixed missing semicolon
         System.out.println("\nPreorder traversal:");
         bt.preorder(root);
+        System.out.println("\nInorder traversal:");
+        bt.inorder(root);
+        System.out.println("\nPostorder traversal:");
+        bt.postorder(root);
     }
 }
