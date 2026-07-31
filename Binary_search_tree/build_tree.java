@@ -30,6 +30,14 @@ public class build_tree {
             newNode.right = builttree(nodes);
             return newNode;
         }
+        public static void preorder(Node root){
+            if(root==null){
+                return;
+            }
+            System.out.print(root.data+" ");
+            preorder(root.left);
+            preorder(root.right);
+        }
     }
 
     public static void main(String[] args) {
@@ -40,5 +48,7 @@ public class build_tree {
         BinaryTree bt = new BinaryTree();
         Node root = bt.builttree(nodes);
         System.out.print("Root node data: " + root.data); // Fixed missing semicolon
+        System.out.println("\nPreorder traversal:");
+        bt.preorder(root);
     }
 }
