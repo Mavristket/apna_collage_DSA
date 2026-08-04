@@ -28,6 +28,28 @@ public class lowest_comman_anccenter2 {
         }
         return root;
     }
+    public static int getdist(Node root,int n){
+        if(root==null){
+            return -1;
+        }
+        if(root.data==n){
+            return 0;
+        }
+        int leftdist=getdist(root.left,n);
+        int rightdist=getdist(root.right,n);
+
+        if(leftdist==-1 && rightdist==-1){
+            return-1;
+        }else if(leftdist==-1){
+            return rightdist+1;
+        }else{
+            return leftdist+1;
+        }
+    }
+    public static int mindis(Node root,int n1,int n2){
+        Node lca=Lca(root,n1,n2);
+        return getdist(lca,n1)+getdist(lca,n2);
+    }
 
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -38,5 +60,6 @@ public class lowest_comman_anccenter2 {
         if (result != null) {
             System.out.print(result.data); // Prints: 2
         }
+        System.out.print(mindis(root,2,3));
     }
 }
