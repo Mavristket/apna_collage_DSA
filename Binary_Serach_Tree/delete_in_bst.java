@@ -49,13 +49,27 @@ public class delete_in_bst{
         }
         return root;
     }
+    public static void printinrange(Node root,int k1,int k2){
+        if(root==null){
+            return;
+        }
+        if(root.data>=k1 && root.data<=k2){
+            printinrange(root.left,k1,k2);
+            System.out.print(root.data+" ");
+            printinrange(root.right,k1,k2);
+        }else if(root.data>k2){
+            printinrange(root.left,k1,k2);
+        }else{
+            printinrange(root.right,k1,k2);
+        }
+    }
     public static void main(String[] args){
         int arr[]={5,1,3,4,2,7};
         Node root=null;
         for(int i=0;i<arr.length;i++){
             root=insert(root,arr[i]);
         }
-        System.out.print(delete(root,7));
-        
+        root=delete(root,7);
+        printinrange(root,1,5);
     }
 }
