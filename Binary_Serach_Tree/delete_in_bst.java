@@ -49,6 +49,19 @@ public class delete_in_bst{
         }
         return root;
     }
+    public static void root_to_leaf(Node root,ArrayList<Integer> path){
+        if(root==null){
+            return;
+        }
+        path.add(root.data);
+        if(root.left==null && root.right==null){
+            System.out.println(path);
+        }
+        root_to_leaf(root.left,path);
+        root_to_leaf(root.right,path);
+        path.remove(path.size()-1);
+
+    }
     public static void printinrange(Node root,int k1,int k2){
         if(root==null){
             return;
@@ -71,5 +84,7 @@ public class delete_in_bst{
         }
         root=delete(root,7);
         printinrange(root,1,5);
+        ArrayList<Integer> path=new ArrayList<>();
+        root_to_leaf(root,path);
     }
 }
