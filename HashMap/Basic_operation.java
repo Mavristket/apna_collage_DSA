@@ -7,5 +7,14 @@ public class Basic_operation{
         hm.put("US",50);
         System.out.print(hm);
         System.out.print(hm.get("India"));
+
+
+        Set<String> keys=hm.keySet();
+        System.out.print(keys);
+
+        for(String k:keys){
+            System.out.println("Key"+k+"Value"+hm.get(k));
+        }
     }
+
 }
