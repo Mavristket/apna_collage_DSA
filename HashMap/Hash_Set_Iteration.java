@@ -19,6 +19,11 @@ public class Hash_Set_Iteration{
         for(String cit:lh){
             System.out.print(cit);
         }
+        TreeSet<String> ts=new TreeSet<>();
+        ts.add("baaji");
+        ts.add("Ramraje");
+
+        System.out.print(ts);
 
 
     }
