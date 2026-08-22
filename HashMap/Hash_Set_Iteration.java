@@ -11,5 +11,15 @@ public class Hash_Set_Iteration{
         for(String cit:city){
             System.out.print(cit);
         }
+
+        LinkedHashSet<String> lh=new LinkedHashSet<>();
+        lh.add("Patna");
+        lh.add("Bihar");
+
+        for(String cit:lh){
+            System.out.print(cit);
+        }
+
+
     }
 }
