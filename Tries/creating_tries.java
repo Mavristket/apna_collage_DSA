@@ -22,11 +22,23 @@ public class creating_tries{
         }
           curr.eow = true;
     }
+    public static boolean search(String key){
+        Node curr=root;
+        for(int level=0;level < key.length();level++){
+            int idx=key.charAt(level)-'a';
+            if(curr.childeren[idx]==null){
+                return false;
+            }
+            curr=curr.childeren[idx];
+        }
+        return curr.eow==true;
+    }
     public static void main(String[] args){
         String words[]={ "the","therir","theree"};
 
         for(int i=0;i<words.length;i++){
             insert(words[i]);
         }
+        System.out.println(search("the"));
     }
 }
