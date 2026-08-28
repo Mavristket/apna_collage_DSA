@@ -9,6 +9,8 @@ public class longest_word_with_all_prefix{
         }
         }
     }
+
+    
     public static Node root=new Node();
 
     public static void insert(String word){
