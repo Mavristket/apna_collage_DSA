@@ -25,6 +25,19 @@ public class DFS {
         }
 
     }
+    public static boolean hashpath(ArrayList<Edge>[] graph,int src,int des,boolean vis[]){
+        if(src==des){
+            return true;
+        }
+        vis[src]=true;
+        for(int i=0;i<graph[src].size();i++){
+            Edge e=graph[src].get(i);
+            if(!vis[e.des] && hashpath(graph,e.des,des,vis)){
+                return true;
+            }
+        }
+        return false;
+    }
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
@@ -43,6 +56,6 @@ public class DFS {
         graph[2].add(new Edge(2, 3, 1));
         graph[2].add(new Edge(2, 4, 1));
 
-        dfs(graph,0,new boolean[v]);
+        System.out.print(hashpath(graph,0,4,new boolean[v]));
     }
 }
