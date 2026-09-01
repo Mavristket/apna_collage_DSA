@@ -14,11 +14,15 @@ public class Connectedbfs {
         }
     }
 
-    // BFS for disconnected graph
+    // ================= BFS =================
+
     public static void bfs(ArrayList<Edge>[] graph) {
+
         boolean[] vis = new boolean[graph.length];
 
+        // For disconnected graph
         for (int i = 0; i < graph.length; i++) {
+
             if (!vis[i]) {
                 utilbfs(graph, vis, i);
             }
@@ -26,7 +30,9 @@ public class Connectedbfs {
     }
 
     // BFS for one component
-    public static void utilbfs(ArrayList<Edge>[] graph, boolean[] vis, int start) {
+    public static void utilbfs(ArrayList<Edge>[] graph,
+                                boolean[] vis,
+                                int start) {
 
         Queue<Integer> q = new LinkedList<>();
 
@@ -44,12 +50,52 @@ public class Connectedbfs {
                 Edge e = graph[curr].get(i);
 
                 if (!vis[e.des]) {
+
                     q.add(e.des);
                     vis[e.des] = true;
                 }
             }
         }
     }
+
+
+    // ================= DFS =================
+
+    public static void dfs(ArrayList<Edge>[] graph) {
+
+        boolean[] vis = new boolean[graph.length];
+
+        // For disconnected graph
+        for (int i = 0; i < graph.length; i++) {
+
+            if (!vis[i]) {
+                dfsutil(graph, i, vis);
+            }
+        }
+    }
+
+    // DFS for one component
+    public static void dfsutil(ArrayList<Edge>[] graph,
+                                int curr,
+                                boolean[] vis) {
+
+        System.out.print(curr + " ");
+
+        vis[curr] = true;
+
+        for (int i = 0; i < graph[curr].size(); i++) {
+
+            Edge e = graph[curr].get(i);
+
+            if (!vis[e.des]) {
+
+                dfsutil(graph, e.des, vis);
+            }
+        }
+    }
+
+
+    // ================= MAIN =================
 
     public static void main(String[] args) {
 
@@ -80,6 +126,15 @@ public class Connectedbfs {
         // 4 -> 2
         graph[4].add(new Edge(4, 2, 1));
 
+
+        // BFS
+        System.out.println("BFS Traversal:");
         bfs(graph);
+
+        System.out.println();
+
+        // DFS
+        System.out.println("DFS Traversal:");
+        dfs(graph);
     }
 }
