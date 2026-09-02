@@ -26,8 +26,10 @@ public class cycle_detection{
         vis[curr] = true;
         for(int i=0;i<graph[curr].size();i++){
             Edge e=graph[curr].get(i);
-            if(!vis[e.des] && detectCycleUtil(graph, vis, e.des, curr)){
-                return true;
+            if(!vis[e.des]){
+                if(detectCycleUtil(graph, vis, e.des, curr)){
+                    return true;
+                }
             } else if(e.des != parent){
                 return true;
             }
