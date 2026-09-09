@@ -24,6 +24,11 @@ public class BFS {
         while (!q.isEmpty()) {
             int curr = q.remove();
 
+
+
+
+
+
             if (!vis[curr]) {
                 System.out.print(curr + " ");
                 vis[curr] = true;
