@@ -10,6 +10,8 @@ public class cycle_detection{
         }
 
 
+
+
     }
     public static boolean detectCycle(ArrayList<Edge>[] grapg){
         boolean vis[]=new boolean[grapg.length];
